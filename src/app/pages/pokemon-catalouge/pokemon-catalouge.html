@@ -1,1 +1,5 @@
-<p>pokemon-catalouge works!</p>
+<div class="pokemon-catalogue">
+    <app-pokemon-card *ngFor="let pokemon of displayedPokemons" [name]="pokemon.name" [imageUrl]="pokemon.imageUrl"></app-pokemon-card>
+  </div>
+  <button (click)="showMore()">Show More</button>
+
