@@ -1,1 +1,14 @@
-<p>trainer works!</p>
+<app-header
+  pageTitle="Collected Pokemons: "
+  linkTitle="Catalogue"
+></app-header>
+
+<div class="trainer-pokemon">
+    <app-pokemon-card
+       *ngFor="let pokemon of collectedPokemons" 
+       [name]="pokemon.name" 
+       [imageUrl]="pokemon.imageUrl"
+       [isColledted]="true"
+       cardUserInPage="trainer"
+    ></app-pokemon-card>
+</div>

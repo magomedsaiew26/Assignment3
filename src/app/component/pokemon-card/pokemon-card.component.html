@@ -1,4 +1,16 @@
 <div class="pokemon-card">
     <img [src]="imageUrl" [alt]="name">
-    <p><b>{{ name }}</b></p>
-  </div>
+    <p><b>{{ (name ? name : '') | capitalize }}</b></p>
+
+
+    <div class="btn-group">
+      <ng-container *ngIf="cardUserInPage === 'catalogue'">
+        <button *ngIf="!isColledted" class="btn add" (click)="addPokemonToTrainerList()">Collect</button>
+        <img *ngIf="isColledted" src="../../../assets/pokeball.png" class="pokeball-img">
+      </ng-container>
+
+      <ng-container *ngIf="cardUserInPage === 'trainer'">
+        <button class="btn remove" (click)="removePokemonToTrainerList()">Remove</button>
+      </ng-container>
+    </div>
+</div>

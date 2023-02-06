@@ -1,5 +1,20 @@
+<app-header
+  pageTitle="Pokemon Catalogue: "
+  linkTitle="Trainer"
+></app-header>
+
 <div class="pokemon-catalogue">
-    <app-pokemon-card *ngFor="let pokemon of displayedPokemons" [name]="pokemon.name" [imageUrl]="pokemon.imageUrl"></app-pokemon-card>
-  </div>
-  <button (click)="showMore()">Show More</button>
+    <app-pokemon-card
+       *ngFor="let pokemon of displayedPokemons" 
+       [name]="pokemon.name" 
+       [imageUrl]="pokemon.imageUrl"
+       [isColledted]="pokemon.isCollected"
+       cardUserInPage="catalogue"
+    ></app-pokemon-card>
+</div>
+
+<div class="bts-group">
+  <button class="footer-btn prev" *ngIf="offset" (click)="goToPrevious()">Previous</button>
+  <button class="footer-btn next" (click)="showMore()">Next</button>
+</div>
 

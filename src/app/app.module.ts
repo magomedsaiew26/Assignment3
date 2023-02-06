@@ -9,6 +9,8 @@ import { TrainerPage } from './pages/trainer/trainer.page';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { PokemonCardComponent } from './component/pokemon-card/pokemon-card.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { HeaderComponent } from './component/header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PokemonCardComponent } from './component/pokemon-card/pokemon-card.comp
     LoginPage,
     PokemonCatalouge,
     TrainerPage,
-    PokemonCardComponent
+    PokemonCardComponent,
+    CapitalizePipe,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

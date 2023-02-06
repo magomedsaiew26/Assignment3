@@ -1,0 +1,28 @@
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#header-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-button {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.header-button.trainer-link {
+    background-color: rgb(75, 177, 211);
+}
+
+.header-button.logout {
+    background-color: rgb(220, 56, 56);
+}

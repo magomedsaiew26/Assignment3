@@ -1,0 +1,27 @@
+.trainer-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  app-pokemon-card {
+    width: 200px;
+    margin: 0 15px 0 15px;
+  }
+  
+  .footer-btn {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .bts-group {
+    display: flex;
+    justify-content: flex-end;
+  }
